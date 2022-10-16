@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+
 import { ImPhone, ImUser } from 'react-icons/im';
 import {
   FormWrap,

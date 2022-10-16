@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import { FilterInput, FilterWrap } from './Filter.styled';
 
 export const Filter = ({ onChange, value }) => {

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import { ImUser } from 'react-icons/im';
 import {
   ContactItem,

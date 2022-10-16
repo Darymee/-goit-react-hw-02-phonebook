@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 
 import { ContactsListItem } from '../ContactsListItem/ContactsListItem';
+
 import { ContactsUl } from './ContactsList.styled.js';
+
 export const ContactsList = ({ contacts, onDelete }) => {
   return (
     <ContactsUl>

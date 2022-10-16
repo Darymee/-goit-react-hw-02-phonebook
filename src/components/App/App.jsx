@@ -1,15 +1,18 @@
 import { nanoid } from 'nanoid';
-import { MdOutlineContactPhone } from 'react-icons/md';
 import React from 'react';
+
+import { MdOutlineContactPhone } from 'react-icons/md';
+
 import ContactForm from '../ContactForm/ContactForm';
+import { ContactsList } from '../ContactsList/ContactsList';
+import { Filter } from 'components/Filter/Filter';
+
 import {
   PhonebookWrap,
   ContactWrap,
   Title,
   ContactsTitle,
 } from './App.styled.js';
-import { ContactsList } from '../ContactsList/ContactsList';
-import { Filter } from 'components/Filter/Filter';
 
 export default class App extends React.Component {
   state = {
