@@ -72,8 +72,8 @@ export default class App extends React.Component {
           Phonebook <MdOutlineContactPhone />
         </Title>
         <ContactForm onSubmit={this.addToList} />
+        <ContactsTitle>Contacts</ContactsTitle>
         <ContactWrap>
-          <ContactsTitle>Contacts</ContactsTitle>
           <Filter value={filter} onChange={this.changeFilter} />
           <ContactsList
             contacts={filteredContacts}

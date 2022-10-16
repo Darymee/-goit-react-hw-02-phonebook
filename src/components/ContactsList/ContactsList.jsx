@@ -1,8 +1,10 @@
-import { ContactsListItem } from '../ContactsListItem/ContactsListItem';
+import PropTypes from 'prop-types';
 
+import { ContactsListItem } from '../ContactsListItem/ContactsListItem';
+import { ContactsUl } from './ContactsList.styled.js';
 export const ContactsList = ({ contacts, onDelete }) => {
   return (
-    <ul>
+    <ContactsUl>
       {contacts.map(({ id, name, number }) => (
         <ContactsListItem
           key={id}
@@ -12,6 +14,17 @@ export const ContactsList = ({ contacts, onDelete }) => {
           onDelete={onDelete}
         />
       ))}
-    </ul>
+    </ContactsUl>
   );
+};
+
+ContactsList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    })
+  ),
+  onDelete: PropTypes.func.isRequired,
 };

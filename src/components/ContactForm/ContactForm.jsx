@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ImPhone, ImUser } from 'react-icons/im';
 import {
@@ -68,3 +69,7 @@ export default class ContactForm extends React.Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
